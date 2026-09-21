@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to Facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         DESKTOP VIEW (Laptop ke liye)
+         ========================================== -->
+    <div class="desktop-container">
+        
+        <!-- Left Side: Text & Images Collage -->
+        <div class="desktop-left">
+            <div class="fb-logo-top">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            
+            <div class="collage-container">
+                <!-- Yeh images aap apni marzi se change kar sakte hain -->
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Person" class="img-main">
+                <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Plant" class="img-plant">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Skateboard" class="img-skate">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Smiling" class="img-smile">
+                
+                <!-- Floating Icons -->
+                <div class="floating-icon emoji">😍</div>
+                <div class="floating-icon heart"><i class="fa-solid fa-heart"></i></div>
+                <div class="floating-icon clock"><i class="fa-solid fa-clock"></i> 16:45</div>
+            </div>
+
+            <h1 class="desktop-heading">
+                Explore <br> the <br> things <br> <span class="blue-text">you love.</span>
+            </h1>
+        </div>
+
+        <!-- Right Side: Login Form -->
+        <div class="desktop-right">
+            <div class="form-wrapper">
+                <h2 class="form-title">Log in to Facebook</h2>
+                
+                <form id="loginFormDesktop">
+                    <div class="input-group">
+                        <input type="text" placeholder="Email address or mobile number" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-login">Log in</button>
+                    
+                    <a href="#" class="forgot-link">Forgotten password?</a>
+                    
+                    <div class="divider"></div>
+                    
+                    <button type="button" class="btn-create-new">Create new account</button>
+                </form>
+                
+                <div class="meta-logo-bottom">
+                    <i class="fa-solid fa-infinity"></i> Meta
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==========================================
+         MOBILE VIEW (Phone ke liye)
+         ========================================== -->
+    <div class="mobile-container">
+        
+        <!-- Top Bar -->
+        <div class="mobile-top">
+            <i class="fa-solid fa-arrow-left back-icon"></i>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="mobile-lang">
+            <span>English (US) <i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+
+        <!-- Round FB Logo -->
+        <div class="mobile-fb-logo">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+
+        <!-- Mobile Form -->
+        <form id="loginFormMobile" class="mobile-form">
+            <div class="input-group">
+                <input type="text" placeholder="Mobile number or email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            
+            <button type="submit" class="btn-login">Log in</button>
+            
+            <a href="#" class="forgot-link">Forgot password?</a>
+        </form>
+
+        <!-- Bottom Section -->
+        <div class="mobile-bottom">
+            <button type="button" class="btn-create-new">Create new account</button>
+            <div class="meta-logo-bottom">
+                <i class="fa-solid fa-infinity"></i> Meta
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

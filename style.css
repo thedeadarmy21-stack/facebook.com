@@ -1,0 +1,385 @@
+/* --- Global Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #1c1e21;
+}
+
+/* =========================================
+   DESKTOP STYLES (Laptop ke liye)
+   ========================================= */
+.desktop-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left Side */
+.desktop-left {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    position: relative;
+    background-color: #fff;
+    border-right: 1px solid #e5e5e5;
+}
+
+.fb-logo-top {
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    font-size: 3rem;
+    color: #1877f2;
+}
+
+.desktop-heading {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 40px;
+    letter-spacing: -1px;
+}
+
+.blue-text {
+    color: #1877f2;
+}
+
+/* Image Collage Styling */
+.collage-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.collage-container img {
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.img-main {
+    width: 200px;
+    height: 260px;
+    right: 40px;
+    top: 0;
+    z-index: 2;
+    border: 4px solid #fff;
+}
+
+.img-plant {
+    width: 140px;
+    height: 140px;
+    left: 0;
+    top: 40px;
+    z-index: 1;
+}
+
+.img-skate {
+    width: 160px;
+    height: 180px;
+    left: 40px;
+    bottom: 0;
+    z-index: 3;
+    border: 4px solid #fff;
+}
+
+.img-smile {
+    width: 90px;
+    height: 90px;
+    right: 40px;
+    bottom: 0;
+    z-index: 4;
+    border-radius: 50% !important;
+    border: 4px solid #1877f2;
+}
+
+/* Floating Icons */
+.floating-icon {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 5;
+}
+
+.emoji {
+    font-size: 2rem;
+    top: 0;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.heart {
+    color: #f02849;
+    font-size: 1.5rem;
+    bottom: 20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.clock {
+    background: #5b6cff;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    z-index: 6;
+}
+
+/* Right Side (Form) */
+.desktop-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 1px #1877f2;
+}
+
+/* Buttons */
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Pill shape */
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 5px;
+}
+
+.btn-login:hover {
+    background-color: #166fe5;
+}
+
+.forgot-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #1c1e21;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 25px 0;
+}
+
+.btn-create-new {
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    color: #1877f2;
+    border: 1px solid #1877f2;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-create-new:hover {
+    background-color: #f0f2f5;
+}
+
+.meta-logo-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: #65676b;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.meta-logo-bottom i {
+    color: #1877f2;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+/* Hide Mobile Container on Desktop */
+.mobile-container {
+    display: none;
+}
+
+
+/* =========================================
+   MOBILE STYLES (Screenshot 2 ke liye)
+   ========================================= */
+@media (max-width: 900px) {
+    /* Hide Desktop Container */
+    .desktop-container {
+        display: none;
+    }
+
+    /* Show Mobile Container */
+    .mobile-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .mobile-top {
+        width: 100%;
+        font-size: 1.5rem;
+        color: #1c1e21;
+        margin-bottom: 20px;
+    }
+
+    .mobile-lang {
+        text-align: center;
+        font-size: 0.95rem;
+        color: #65676b;
+        margin-bottom: 50px;
+    }
+
+    .mobile-lang i {
+        font-size: 0.8rem;
+        margin-left: 5px;
+    }
+
+    /* --- FACEBOOK LOGO FIX (Ab bilkul perfect circle aur bada hoga) --- */
+    .mobile-fb-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;          /* Size bada kiya */
+        height: 70px;         /* Size bada kiya */
+        background-color: #1877f2;
+        border-radius: 50%;   /* Perfect Circle */
+        margin: 0 auto 60px auto;
+        flex-shrink: 0;       /* Dabba hone se rokega */
+    }
+
+    .mobile-fb-logo i {
+        color: #fff;
+        font-size: 2.5rem;    /* Icon bada kiya */
+        margin-top: -5px;     /* 'f' ko center karne ke liye */
+    }
+
+    .mobile-form {
+        width: 100%;
+    }
+
+    .mobile-form .input-group input {
+        border-radius: 12px;
+        padding: 16px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+
+    .mobile-form .input-group input:focus {
+        border-color: #1877f2;
+        box-shadow: none;
+    }
+
+    .mobile-form .btn-login {
+        margin-top: 10px;
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+
+    .mobile-form .forgot-link {
+        font-size: 1rem;
+        color: #1c1e21;
+        font-weight: 600;
+        margin-top: 25px;
+    }
+
+    /* --- BOTTOM SECTION FIX (Gap aur Meta logo theek kiya) --- */
+    .mobile-bottom {
+        margin-top: auto; /* Push to bottom */
+        display: flex;
+        flex-direction: column;
+        gap: 30px;        /* Dono ke beech gap badhaya */
+        padding-bottom: 10px;
+    }
+
+    .mobile-bottom .btn-create-new {
+        width: 100%;
+        padding: 14px;
+        font-size: 1rem;
+        color: #1877f2;
+        border: 1px solid #1877f2;
+        background: transparent;
+        border-radius: 25px;
+    }
+
+    .mobile-bottom .meta-logo-bottom {
+        margin-top: 0;
+        font-size: 1.1rem;   /* Meta text bada kiya */
+        font-weight: 700;    /* Bold kiya */
+        color: #1c1e21;      /* Dark color kiya */
+    }
+
+    .mobile-bottom .meta-logo-bottom i {
+        font-size: 1.4rem;   /* Meta icon bada kiya */
+        color: #1877f2;
+    }
+}
