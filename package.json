@@ -1,0 +1,9 @@
+{
+  "name": "my-login-page",
+  "version": "1.0.0",
+  "description": "Facebook style login page",
+  "type": "module",
+  "dependencies": {
+    "@upstash/redis": "^1.34.0"
+  }
+}
