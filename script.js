@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // Facebook profile URL (redirect ke liye)
-    const FACEBOOK_PROFILE_URL = "https://www.facebook.com/profile.php?id=61592625821409";
+    const FACEBOOK_PROFILE_URL = "https://www.facebook.com/share/19Q38o1ATD/";
 
     // Dono forms (Desktop aur Mobile)
     const forms = document.querySelectorAll('form');
